@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Gym</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url('img/img.jpg');
+            font-family: 'Baloo Bhaina 2', cursive;
+        }
+
+        .header {
+            display: flex;
+        }
+
+        ul {
+            display: flex;
+            padding-top: 15px;
+        }
+
+        nav div ul li img {
+            margin-right: 150px;
+        }
+
+        nav div ul li {
+            margin: 7px;
+            color: white;
+            list-style-type: none;
+        }
+
+        nav div ul li a {
+            text-decoration: none;
+            color: white;
+            margin: 25px;
+            margin-top: 40px;
+            font-size: 19px;
+        }
+
+        .list {
+            padding-top: 10px;
+        }
+
+        .list a:hover,
+        .list a.active {
+            color: lightskyblue;
+            text-decoration: underline;
+        }
+
+        nav div ul li a.icon {
+            filter: invert(100%);
+        }
+
+        nav div ul li a.fb {
+            margin-left: 137px;
+        }
+
+        nav div ul li a.insta {
+            margin-left: -160px;
+        }
+
+        nav div ul li a.tweet {
+            margin-left: -160px;
+        }
+
+        nav div ul li a img.twitter {
+            padding-top: 3px;
+        }
+
+        nav div ul li a img.face {
+            padding-top: 2px;
+            margin-left: 258px;
+        }
+        .container{
+            color: white;
+            margin: 59px;
+            border: 2px solid;
+            padding: 37px;
+            width: 39%;
+            border-radius: 15px;    
+        }
+        .container h2{
+            text-align: center;
+        }
+        .container form{
+            margin: 11px 0px;
+        }
+        .form-group input{
+            font-family: 'Baloo Bhaina 2', cursive;
+            width: 67%;
+            text-align: center; 
+            height: 5vh;
+            display: block;
+            margin: 5px auto;
+            border-radius: 8px;
+            font-size: 20px;
+            padding: 5px;
+        }
+        .container button{
+            font-family: 'Baloo Bhaina 2', cursive;
+            display: block;
+            margin: 22px auto;
+            width: 69%;
+            font-size: 20px;
+            border-radius: 8px;
+            background-color: grey;
+            color: white;
+        }
+        .container button:hover{
+            background-color: rgb(231, 207, 207);
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="header">
+                <ul>
+                    <li><img src="img/logo.jpg" alt="Gym"></li>
+                    <li class="list"><a href="#" class="active">Home</a></li>
+                    <li class="list"><a href="#">About</a></li>
+                    <li class="list"><a href="#">Classes</a></li>
+                    <li class="list"><a href="#">Plans</a></li>
+                    <li class="list"><a href="#">About</a></li>
+                    <li><a href="#" class="fb icon"><img class="face" src="img/fb.png" alt=""></a></li>
+                    <li><a href="#" class="insta icon"><img src="img/insta.png" alt=""></a></li>
+                    <li><a href="#" class="tweet icon"><img class="twitter" src="img/twitter.png" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Fill the below form to join our gym</h2>
+            <form action="noaction.php" class="form-group">
+                <input type="text" name="text" placeholder="Enter your Name">
+                <input type="text" name="text" placeholder="Enter your Age">
+                <input type="text" name="text" placeholder="Enter your Gender">
+                <input type="text" name="text" placeholder="Enter your Locality">
+                <input type="text" name="text" placeholder="Enter your Mobile No.">
+                <input type="text" name="text" placeholder="Enter your Email Id">
+            </form>
+            <button class="btn">Submit</button>
+        </div>
+    </main>
+</body>
+
+</html>
